@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="{{ url_for('static',filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    <!-- custom css -->
+    <link href="{{ url_for('static',filename='css/custom.css') }}" rel="stylesheet">
+
+    <!-- Datatable css -->
+    <!-- <link href="https://cdn.datatables.net/2.0.7/css/dataTables.bootstrap5.css"> -->
+
+    <title>{{title}}</title>
+  </head>
+  <body class="bg-primary">
+    <div class="">
+        {% block content %}
+               
+    
+        {% endblock content%}
+
+    </div>
+
+
+
+    <!-- bootstrap js -->
+    <script src="{{ url_for('static',filename='js/bootstrap.bundle.min.js') }}"></script>
+  </body>
+</html>
